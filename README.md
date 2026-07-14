@@ -1,60 +1,91 @@
+# WorkFlow Pro QA Automation Framework
+
+## Overview
+
+This repository contains a scalable QA Automation Framework developed as part of a technical assessment for a B2B SaaS platform.
+
+The framework demonstrates:
+
+- UI Automation using Playwright
+- API Automation using Pytest
+- BrowserStack Integration
+- Multi-Tenant Testing
+- Cross Browser Testing
+- Mobile Testing Strategy
+- Page Object Model (POM)
+- CI/CD Ready Architecture
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| Python | Programming Language |
+| Pytest | Test Framework |
+| Playwright | UI Automation |
+| Requests | API Testing |
+| BrowserStack | Cross Browser Testing |
+| GitHub Actions | CI/CD |
+| Allure | Test Reporting |
+
+---
+
 ## Project Structure
 
-```text
-workflowpro-qa-automation-assessment/
+```
+qa-automation
+│
+├── api/
+├── config/
+├── docs/
+├── fixtures/
+├── pages/
+├── reports/
+├── screenshots/
+├── testdata/
+├── tests/
+├── utils/
 │
 ├── README.md
 ├── requirements.txt
 ├── pytest.ini
-├── .env.example
-├── browserstack.yml
-├── playwright.config.py
-│
-├── config/
-│   ├── config.py
-│   ├── qa.json
-│   ├── staging.json
-│   └── production.json
-│
-├── pages/
-│   ├── base_page.py
-│   ├── login_page.py
-│   ├── dashboard_page.py
-│   └── project_page.py
-│
-├── api/
-│   ├── api_client.py
-│   ├── auth_api.py
-│   └── project_api.py
-│
-├── fixtures/
-│   ├── browser_fixture.py
-│   ├── api_fixture.py
-│   └── tenant_fixture.py
-│
-├── utils/
-│   ├── logger.py
-│   ├── helpers.py
-│   ├── retry.py
-│   └── screenshot.py
-│
-├── testdata/
-│   ├── users.json
-│   └── projects.json
-│
-├── tests/
-│   ├── ui/
-│   │   ├── test_login.py
-│   │   └── test_dashboard.py
-│   │
-│   ├── api/
-│   │   └── test_projects.py
-│   │
-│   └── integration/
-│       └── test_project_creation_flow.py
-│
-├── reports/
-│
-└── docs/
-    └── QA_Automation_Assessment.md
+└── .env.example
+```
+
+---
+
+## Features
+
+- Page Object Model
+- API Client Layer
+- Environment Configuration
+- Retry Mechanism
+- Screenshot on Failure
+- Logging
+- Multi Tenant Support
+- BrowserStack Integration
+- Parallel Execution
+- CI/CD Ready
+
+---
+
+## Run Tests
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Install Playwright
+
+```bash
+playwright install
+```
+
+Run all tests
+
+```bash
+pytest
 ```
