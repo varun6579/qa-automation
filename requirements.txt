@@ -1,0 +1,10 @@
+pytest
+playwright
+pytest-playwright
+requests
+python-dotenv
+pytest-html
+pytest-xdist
+allure-pytest
+browserstack-local
+loguru
