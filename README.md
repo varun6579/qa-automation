@@ -1,3 +1,6 @@
+## Project Structure
+
+```text
 workflowpro-qa-automation-assessment/
 │
 ├── README.md
@@ -54,3 +57,4 @@ workflowpro-qa-automation-assessment/
 │
 └── docs/
     └── QA_Automation_Assessment.md
+```
